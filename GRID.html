@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cc338bc0cb.js" crossorigin="anonymous"></script>
+    <title>grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .main-content {
+            min-height: 1000px;
+            width: 90%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 300px 700px;
+        }
+
+        .left-section {
+            background-color: black;
+            grid-column: span 1 / 300px;
+        }
+
+        .right-section {
+            background-color: antiquewhite;
+            grid-column: span 1 / span 2;
+        }
+
+        body {
+            background-color: rgb(128, 108, 79);
+        }
+
+        .profile-image {
+            padding: 1rem;
+            display: block;
+            margin: auto;
+            border: 5px white solid;
+            border-radius: 30%;
+            width: 60%;
+        }
+
+        .name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.02px;
+            padding: 0.8rem;
+            color: white;
+        }
+
+        .designation {
+            font-size: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+            padding-bottom: 0.5rem;
+            color: white;
+        }
+
+        .description {
+            font-size: 0.75rem;
+            text-align: center;
+            padding: 1rem;
+            color: white;
+            letter-spacing: 0.02px;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0.5%;
+            background-color: grey;
+        }
+
+        #mail {
+            color: rgb(223, 111, 111);
+        }
+
+        #linkedin {
+            color: rgb(158, 158, 218);
+        }
+
+        .icon {
+            margin: 5% auto;
+        }
+
+        li {
+            list-style: none;
+
+        }
+
+        .skills {
+            color: white;
+            font-size: 00.75rem;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 1rem 0.5rem;
+
+        }
+
+        .skill-name {
+            font-size: 0.65rem;
+            /* font-weight: 0.65rem;*/
+            text-align: left;
+            padding-bottom: 0.5rem;
+            color: white;
+            margin: 5%;
+        }
+
+        .progress-bar {
+            background: black;
+            border: 1px white solid;
+            height: 4px;
+            width: 90%;
+            margin: 1%;
+        }
+
+        .right-main-content {
+            padding: 2rem 32px 3rem 48px;
+        }
+
+        .right-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .ab {
+            padding: 0.5rem;
+        }
+
+        .edu {
+            margin-left: 1%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-right: auto;
+            /* padding: 3%;*/
+
+        }
+
+        th {
+            margin-left: 0%;
+        }
+
+
+
+
+        .edu-content {
+            display: grid;
+            grid-template-columns: 500px auto;
+        }
+
+        .left {
+            padding: 0.5rem;
+        }
+
+        .right {
+            padding: 0.5rem;
+        }
+
+        .Exper {
+            display: grid;
+            grid-template-columns: 500px auto;
+        }
+
+
+
+        .proj {
+            display: grid;
+            grid-template-columns: 500px auto;
+        }
+
+        @media screen and (max-width: 673px) {
+            .main-content {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* .right-pro{
+            padding: 1rem;
+        }*/
+    </style>
+</head>
+
+<body>
+    <main class="main-content">
+        <section class="left-section">
+            <div class="left-content">
+                <div class="profile-details">
+
+                    <img class="profile-image" src="https://docs.google.com/uc?id=19ObG6aKIot66K-WZmxNeNO4l0Cv5wzHZ" alt="pic">
+
+                    <h2 class="name">MANJEET KUMAR SINGH</h2>
+                    <h3 class="designation">student</h3>
+                    <hr>
+                    <p class="description">FULL STACK DEVELOPER | JAVA DEVELOPER | GOOD KNOWLEDGE OF DATA STRUCTURE</p>
+                    <div class="contact-item">
+                        <div class="social-media">
+                            <li class="icon"><a href="https://www.linkedin.com/in/manjeet-kumar-singh-11840020b"><i
+                                        class="fa fa-linkedin" id="linkein"></i></a></li>
+                            <li class="icon"><a href="https://github.com/9M1a3jeet"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li class="icon"><a href="manjeetkumarsingh12@gmailcom"><i class="fa fa-1.3x fa-at"
+                                        id="mail"></i></a></li>
+                            <li class="icon"><a href="tel:+91 6376981491"><i class="fas fa-phone-alt"
+                                        id="phonr"></i></a></li>
+                        </div>
+
+                    </div>
+                    <div class="skills">
+                        <h1>Skills</h1>
+                    </div>
+                    <div class="skill-name">
+                        <h3>JAVA</h3><progress class="progress-bar" value="85" max="100">80%</progress>
+                    </div>
+                    <div class="skill-name">
+                        <h3>CPP</h3><progress class="progress-bar" value="70" max="100">80%</progress>
+                    </div>
+                    <div class="skill-name">
+                        <h3>C</h3><progress class="progress-bar" value="90" max="100">80%</progress>
+                    </div>
+                    <div class="skill-name">
+                        <h3>HTML</h3><progress class="progress-bar" value="95" max="100">80%</progress>
+                    </div>
+                    <div class="skill-name">
+                        <h3>CSS</h3><progress class="progress-bar" value="65" max="100">80%</progress>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="right-section">
+            <div class="right-main-content">
+                <section class="about">
+                    <h2 class="right-title">About me</h2>
+                    <p class="ab" style="text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Blanditiis
+                        repellendus saepe voluptatum fugiat eligendi consectetur iste odio accusamus aliquid quaerat,
+                        molestias iusto sit neque quia tempora soluta perferendis mollitia quas aperiam. Rerum iusto
+                        accusamus aperiam itaque fugiat eligendi ex voluptatum, maiores, numquam facilis nesciunt. Culpa
+                        impedit accusantium voluptates. Nulla excepturi iure optio libero quis iste saepe aperiam
+                        sapiente perspiciatis ullam labore suscipit at voluptates soluta dignissimos, pariatur magnam
+                        quae dolor. Libero nihil, perspiciatis corporis reprehenderit perferendis incidunt excepturi
+                        amet, nesciunt numquam inventore ipsa repudiandae dolor obcaecati voluptas magni!</p>
+                </section>
+                <section class="edu">
+                    <h2 class="right-title">Education</h2>
+                    <div class="edu-content">
+                        <section class="left-edu">
+                            <h4 class="left">Bachelor in Engineering</h4>
+                            <p class="left">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <h4 class="left">Intermediate</h4>
+                            <p class="left">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <h4 class="left">Higher</h4>
+                            <p class="left">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </section>
+                        <section class="right-edu">
+                            <h4 class="right">U I T</h4>
+                            <h6 class="right">2018-2022</h6>
+                            <h4 class="right">M S Memorial</h4>
+                            <h6 class="right">2015-2017</h6>
+                            <h4 class="right">D A V </h4>
+                            <h6 class="right">2015-2017</h6>
+                        </section>
+                    </div>
+                </section>
+
+                <section class="Experience">
+                    <h2 class="right-title">Experience</h2>
+                    <div class="Exper">
+                        <section class="left-exp">
+                            <h4 class="left">App Development</h4>
+                            <p class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo
+                                tenetur, aut numquam odit, eos vero illo dignissimos, hic totam similique amet?
+                                Pariatur, nostrum natus.</p>
+                        </section>
+                        <section class="right-exp">
+                            <h4 class="right">Exposys Data Lab</h4>
+                            <h6 class="right">30-07-2021 To 29-09-2021</h6>
+                        </section>
+                    </div>
+                </section>
+                <section class="project">
+                    <div class="proj">
+                        <section class="left-proj">
+                            <h2 class="right-title">Project</h2>
+                        </section>
+                        <section class="right-proj">
+                            <h2 class="right-title">Tools</h2>
+                        </section>
+                    </div>
+                    <h4 class="left">Banking System</h4>
+                    <div class="proj">
+
+                        <section class="left-proj">
+                            <p class="left">We can open our unique Account and by using this account we can perform all
+                                kind of transaction</p>
+                        </section>
+                        <section class="right-proj">
+                            <h6 class="right"> JAVA , FILE HANDLING,HASHMAP</h6>
+                        </section>
+                    </div>
+                    <h4 class="left">Resume</h4>
+                    <div class="proj">
+
+                        <section class="left-proj">
+                            <p class="left">It is a simple website which maintain my personal portfolio</p>
+                        </section>
+                        <section class="right-proj">
+                            <h6 class="right">HTML,CSS</h6>
+                        </section>
+                    </div>
+                    <h4 class="left">Employee System</h4>
+                    <div class="proj">
+
+
+                        <section class="left-proj">
+                            <p class="left">By sucessfully login we can see the Employee details</p>
+                        </section>
+                        <section class="right-pro">
+
+
+
+                            <h6 class="right">C</h6>
+                        </section>
+                    </div>
+            </div>
+        </section>
+        </div>
+        </section>
+    </main>
+</body>
+
+</html>
