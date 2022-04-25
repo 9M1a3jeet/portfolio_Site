@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content {
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+
+.left-section {
+    background-color: black;
+    grid-column: span 1 / 300px;
+}
+
+.right-section {
+    background-color: antiquewhite;
+    grid-column: span 1 / span 2;
+}
+
+body {
+    background-color: rgb(128, 108, 79);
+}
+
+.profile-image {
+    padding: 1rem;
+    display: block;
+    margin: auto;
+    border: 5px white solid;
+    border-radius: 30%;
+    width: 60%;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+    color: white;
+}
+
+.designation {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    color: white;
+}
+
+.description {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    letter-spacing: 0.02px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5%;
+    background-color: grey;
+}
+
+#mail {
+    color: rgb(223, 111, 111);
+}
+
+#linkedin {
+    color: rgb(158, 158, 218);
+}
+
+.icon {
+    margin: 5% auto;
+}
+
+li {
+    list-style: none;
+
+}
+
+.skills {
+    color: white;
+    font-size: 00.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+
+}
+
+.skill-name {
+    font-size: 0.65rem;
+    /* font-weight: 0.65rem;*/
+    text-align: left;
+    padding-bottom: 0.5rem;
+    color: white;
+    margin: 5%;
+}
+
+.progress-bar {
+    background: black;
+    border: 1px white solid;
+    height: 4px;
+    width: 90%;
+    margin: 1%;
+}
+
+.right-main-content {
+    padding: 2rem 32px 3rem 48px;
+}
+
+.right-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.ab {
+    padding: 0.5rem;
+}
+
+.edu {
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: auto;
+    /* padding: 3%;*/
+
+}
+
+th {
+    margin-left: 0%;
+}
+
+
+
+
+.edu-content {
+    display: grid;
+    grid-template-columns: 500px auto;
+}
+
+.left {
+    padding: 0.5rem;
+}
+
+.right {
+    padding: 0.5rem;
+}
+
+.Exper {
+    display: grid;
+    grid-template-columns: 500px auto;
+}
+
+
+
+.proj {
+    display: grid;
+    grid-template-columns: 500px auto;
+}
+
+@media screen and (max-width: 673px) {
+    .main-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* .right-pro{
+    padding: 1rem;
+}*/
